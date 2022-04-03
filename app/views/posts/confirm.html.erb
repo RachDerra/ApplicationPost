@@ -1,0 +1,6 @@
+<%= form_with(model: @post, local: true) do |form| %>
+    <%= form.hidden_field :content %>
+    <p>Text:<%= @post.content %></p>
+    <%= form.submit  "register" %>
+    <% end %>
+    <%= link_to 'Return', :back %>
